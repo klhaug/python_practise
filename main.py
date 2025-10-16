@@ -3,7 +3,11 @@ import sys
 
 def main():
     print('------THIS IS THE MAIN FUNCTION--------')
-    sum = add_numbers(sys.argv[1], sys.argv[2])
-    print(sum)
 
+    num_one = input(f"Give me your first number\n")
+    num_two = input(f"Give me your second number\n")
+
+    sum = add_numbers(num_one, num_two) 
+    print(f"The sum of your two numbers are {sum}")
+    
 main()
