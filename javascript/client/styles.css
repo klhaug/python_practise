@@ -5,3 +5,9 @@ body {
 	background-color: #fdfdfd;
 	height: 100vh;
 }
+
+#timer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
