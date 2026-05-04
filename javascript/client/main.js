@@ -57,7 +57,7 @@ function stopTimer() {
 function createHistoryRecord() {
 	const date = new Date();
 	let p = document.createElement("p");
-	const historyText = `${date}, you logged: Minutes: Seconds ${seconds}`
+	const historyText = `${date}, you logged: ${minutes > 0 ? `Minutes: ${minutes},` : ''} ${seconds > 0 ? `Seconds: ${seconds}`: null}`;
 	const textNode = document.createTextNode(historyText);
 	p.appendChild(textNode);
 	history.appendChild(p);
