@@ -23,8 +23,8 @@ let minutes = 0;
 let seconds = 0;
 let centiSeconds = 0;
 
-
 let intervalId;
+
 
 function tick() {
 	intervalId = setInterval(() => {
@@ -46,7 +46,7 @@ function startTimer() {
 	tick();
 }
 
-alert(localStorage.getItem("test"));
+// alert(localStorage.getItem("test"));
 
 function stopTimer() {
 	clearInterval(intervalId);
@@ -57,7 +57,7 @@ function stopTimer() {
 function createHistoryRecord() {
 	const date = new Date();
 	let p = document.createElement("p");
-	const historyText = `${date}, you logged: minutes: ${minutes}, seconds ${seconds}`
+	const historyText = `${date}, you logged: Minutes: Seconds ${seconds}`
 	const textNode = document.createTextNode(historyText);
 	p.appendChild(textNode);
 	history.appendChild(p);
