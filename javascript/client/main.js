@@ -10,7 +10,7 @@ const history = document.getElementById("history");
 //TIMERS
 const timer = document.getElementById("timer");
 const m = document.getElementById("minutes");
-const ms = document.getElementById("cs");
+const cs = document.getElementById("cs");
 const s = document.getElementById("s");
 
 //EVENTLISTENERS
